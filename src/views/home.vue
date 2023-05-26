@@ -7,6 +7,7 @@
         <button @click="cal">计算</button>
         <div class="rect">{{store.count}}</div>
         <button class="add" @click="add1">添加</button>
+        <Button primary>点击</Button>
     </div>
 </template>
 
@@ -17,6 +18,7 @@
     import { computed } from '@vue/reactivity';
     import { onMounted } from 'vue';
     import lodash from 'lodash';
+    import { Button } from 'ant-design-vue'
     const routes = computed(() => store.routes);
     const store = useStore();
     const router = useRouter();
