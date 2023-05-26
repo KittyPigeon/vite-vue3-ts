@@ -5,6 +5,7 @@
         </button>
         <button @click="add()">添加路由</button>
         <button @click="cal">计算</button>
+        <div class="rect"></div>
     </div>
 </template>
 
@@ -34,4 +35,9 @@
         });
     }
 </script>
-<style lang="less" scoped></style>
+<style lang="less" scoped>
+    .rect{
+       box-sizing: border-box;
+       border-radius: 2px;
+    }
+</style>
