@@ -1,21 +1,18 @@
 module.exports = {
-    root: true,
-    env: {
-      node: true,
-    },
-    extends: [
-      'plugin:vue/vue3-essential',
-      'eslint:recommended',
-      'prettier',
-      'prettier/vue',
-    ],
-    plugins: ['vue', 'prettier'],
-    parserOptions: {
-      parser: 'babel-eslint',
-    },
-    rules: {
-      'prettier/prettier': ['error', { endOfLine: 'auto' }],
-      
-    },
-  };
-  
+  root: true,
+  env: {
+    browser: true,
+    node: true,
+    es6: true
+  },
+  extends: ['plugin:vue/essential', '@vue/prettier'],
+  plugins: ['vue', 'prettier'],
+  parserOptions: {
+    parser: 'babel-eslint',
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  rules: {
+    "semi": ["error", "always"],
+  },
+};
