@@ -1,0 +1,20 @@
+module.exports = {
+    root: true,
+    env: {
+      node: true,
+    },
+    extends: [
+      'plugin:vue/vue3-essential',
+      'eslint:recommended',
+      'prettier',
+      'prettier/vue',
+    ],
+    plugins: ['vue', 'prettier'],
+    parserOptions: {
+      parser: 'babel-eslint',
+    },
+    rules: {
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    },
+  };
+  
