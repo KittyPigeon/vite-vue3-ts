@@ -5,7 +5,8 @@
         </button>
         <button @click="add()">添加路由</button>
         <button @click="cal">计算</button>
-        <div class="rect"></div>
+        <div class="rect">{{store.count}}</div>
+        <button class="add" @click="add1">添加</button>
     </div>
 </template>
 
@@ -28,6 +29,9 @@
     const cal = () => {
         console.log(lodash.chunk(['a', 'b', 'c', 'd'], 2))
     }
+    const add1 = () => {
+        store.increment();
+    }
     const add = () => {
 
         GetRoutes().then((res: any) => {
@@ -36,8 +40,8 @@
     }
 </script>
 <style lang="less" scoped>
-    .rect{
-       box-sizing: border-box;
-       border-radius: 2px;
+    .rect {
+        box-sizing: border-box;
+        border-radius: 2px;
     }
 </style>
