@@ -1,8 +1,8 @@
 <template>
-  <div>关于</div>
-  <div class="hello">
-    <ul>
-      <!-- <el-button
+	<div>关于</div>
+	<div class="hello">
+		<ul>
+			<!-- <el-button
         v-if="getBarAddBtn"
         @click="showModel"
         v-show="activeList.menu == 'barGuide'"
@@ -17,18 +17,18 @@
         :isAdd="true"
         :show.sync="addModal"
       ></company-dia> -->
-    </ul>
-  </div>
+		</ul>
+	</div>
 </template>
 
 <script lang="ts" setup></script>
 <style lang="less" scoped>
 .hello {
-  box-sizing: border-box;
-  height: 200px;
-  position: relative;
-  top: 20px;
-  left: 30px;
-  width: 200px;
+	box-sizing: border-box;
+	height: 200px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	width: 200px;
 }
 </style>

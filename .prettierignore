@@ -1,10 +1,13 @@
 /dist
 /node_modules
+/deploy
+*.yml
+*.yaml
 tsconfig.json
-.eslintrc.js
-commitlint.config.js
-vite.config.ts
 package.json
+.eslintrc.js
+vite.config.ts
+.eslintrc.js
 *.svg
 *.png
 *.jpg

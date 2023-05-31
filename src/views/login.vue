@@ -1,8 +1,8 @@
 <template>
-    <div>登录</div>
+	<div>登录</div>
 </template>
 
 <script setup>
-    import {} from "vue"
+import {} from "vue";
 </script>
 <style lang="scss" scoped></style>
