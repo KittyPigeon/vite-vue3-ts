@@ -56,9 +56,10 @@ json
 
 ### 文献
 
--   [动态路由生成](https://www.jianshu.com/p/1dfcc790c637)
--   [vue3+ts+vite](https://blog.csdn.net/qq_17335549/article/details/128480583)
--   [vite+vue3+prettier+eslint](https://juejin.cn/post/7222460499493584955)
+- [动态路由生成](https://www.jianshu.com/p/1dfcc790c637)
+- [vue3+ts+vite](https://blog.csdn.net/qq_17335549/article/details/128480583)
+- [vite+vue3+prettier+eslint](https://juejin.cn/post/7222460499493584955)
 
 ## 错误总结
-- package.json文件错误会导致eslint失败
+
+- package.json 文件错误会导致 eslint 失败

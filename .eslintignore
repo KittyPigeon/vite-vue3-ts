@@ -4,6 +4,7 @@ tsconfig.json
 .eslintrc.js
 commitlint.config.js
 vite.config.ts
+# *.d.ts
 package.json
 *.svg
 *.png

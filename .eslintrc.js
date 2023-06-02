@@ -19,7 +19,7 @@ module.exports = {
 	parser: "vue-eslint-parser",
 	rules: {
 		// semi: ["error", "always"],
-		"vue/multi-word-component-names":0,
+		"vue/multi-word-component-names": 0,
 		// "prettier/prettier": [
 		// 	"error",
 		// 	{
@@ -27,9 +27,10 @@ module.exports = {
 		// 		parser: "flow",
 		// 		semi: true, // 结尾不用分号
 		// 		"singleQuote": true,
-				
+
 		// 	}
 		// ],
 		indent: ["off", 2],
+		"@typescript-eslint/triple-slash-reference": "0"
 	},
 };

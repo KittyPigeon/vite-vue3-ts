@@ -1,0 +1,3 @@
+interface goodsType {
+	id: string;
+}

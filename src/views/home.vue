@@ -19,6 +19,13 @@ import { computed } from "vue";
 import { onMounted } from "vue";
 import lodash from "lodash";
 import { Button } from "ant-design-vue";
+const good: goodsType = {
+	id: "",
+};
+onMounted(() => {
+	console.log("测试");
+	console.log("API_BASE_URL");
+});
 const routes = computed(() => {
 	return store.routes;
 });
@@ -32,7 +39,7 @@ const handleClick = (path: string) => {
 };
 const cal = () => {
 	console.log(lodash.chunk(["a", "b", "c", "d"], 2));
-	console.log("abc");
+	console.log("abc", API_BASE_URL);
 };
 const add1 = () => {
 	store.increment();
