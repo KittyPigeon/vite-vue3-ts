@@ -6,8 +6,9 @@ const service = axios.create({
 	timeout: 5000,
 });
 service.interceptors.request.use(config => {
-	config.headers.test = "I am only a header!";
-	config.headers["Content-Type"] = "application/json";
+	config.headers["Content-Type"] = "application/x-www-form-urlencoded";
+	config.headers["X-Requested-With"] = "XMLHttpRequest";
+	config.headers["Source-Flag"] = "h5";
 	return config;
 });
 export default service;

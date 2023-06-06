@@ -20,6 +20,8 @@ const router = createRouter({
 	routes,
 });
 
+const ignores = ["noRight", "404", "bind", "noBind"]; // 权限忽略
+
 // 路由守卫
 router.beforeEach((to, from, next) => {
 	if (!localStorage.getItem("userid") && to.name != "login") {
