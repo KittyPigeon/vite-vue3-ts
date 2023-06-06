@@ -1,16 +1,20 @@
 // /src/mock/index.ts
 import { MockMethod } from "vite-plugin-mock";
-
+import AJSON from "./data/a";
+import BarList from './data/barList'
 const mock: Array<MockMethod> = [
 	{
 		url: "/api/test",
 		method: "get",
 		response: () => {
-			return {
-				status: 200,
-				message: "success",
-				data: "返回的数据",
-			};
+			return AJSON
+		},
+	},
+	{
+		url: "/user/leftRoomListSearch.action",
+		method: "post",
+		response: () => {
+			return BarList
 		},
 	},
 	{
